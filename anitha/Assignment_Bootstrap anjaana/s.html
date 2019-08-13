@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
+    <link rel="stylesheet" href="assets/css/styles.min.css">
+</head>
+
+<body><script>
+function validateform()
+{
+    var x=document.forms["myform"]["Name"].value;
+    var y=document.forms["myform"]["email"].value;
+    var a=document.forms["myform"]["Number"].value;
+    var b=document.forms["myform"]["password"].value;
+    
+    if(x=="")
+        {
+            alert("inavlid!enter name");
+        return false;}
+    if(y=="")
+        {
+            alert("inavlid!Enter emailid");
+        return false;}
+    if(a=="")
+        {
+            alert("inavlid!Enter phone number");
+        return false;}
+    if(b=="")
+        {
+            alert("inavlid!Enterpassword");
+        return false;}
+    
+}
+</script>
+<div class="register-photo">
+    <div class="form-container">
+        <div class="image-holder"></div>
+        <form name ="myform" action=p1.html onsubmit="return validateform()" method="post">
+            <h2 class="text-center"><strong>Create</strong> an  account.</h2>
+            <div class="form-group"><input class="form-control" type="fname" name="Name" placeholder="Name" /></div>
+            <div class="form-group"><input class="form-control" type="email" name="email" placeholder="Email" /></div>
+            <div class="form-group"><input class="form-control" type="number" name="Number" placeholder="Phone Number" /></div>
+            <div class="form-group"><input class="form-control" type="password" name="password" placeholder="Password" /></div>
+            
+            <div class="form-group">
+                <div class="form-check"><label class="form-check-label"><input class="form-check-input" type="checkbox" />I agree to the license terms.</label></div>
+            </div>
+            <div class="form-group"><button class="btn btn-primary btn-block" type="submit">Sign Up</button></div><a href="#" class="already">You already have an account? Login here.</a></form>
+    </div>
+</div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.0/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/script.min.js"></script>
+</body>
+
+</html>

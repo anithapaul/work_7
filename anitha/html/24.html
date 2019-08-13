@@ -1,0 +1,39 @@
+<html>
+<head>
+<style type="text/css"media="all">
+body{
+    background-color:green;
+    text-align:center;
+}
+
+</style>
+<script>
+function validateform(){
+    var x=document.getElementById("mytext").value;
+     document.getElementById("demo").innerHTML=x;
+     document.getElementById("yyy").innerHTML=y;
+    if(x==""){
+        alert("name must be filled out");
+        return false;
+    }
+    
+}
+
+</script>
+</head>
+<body>
+<h1>welcome to my website</h1>
+<h3>who are you!</h3>
+<!--{% comment %} <form name="myform"
+onsubmit="return validateform()"method="post"> {% endcomment %}-->
+<input type="text"id="mytext"name="fname"value=""><br><br>
+
+<input type="submit"value="clickme"onclick="validateform()">
+
+<p id="demo"></p>
+<p id="yyy"style="color:blue">hlo</p>
+
+
+</body>
+
+</html>
